@@ -1,0 +1,8 @@
+@mixin typography($size, $weight, $height, $spacing, $align) {
+  font-family: "Inter", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  letter-spacing: $spacing;
+  text-align: $align;
+}

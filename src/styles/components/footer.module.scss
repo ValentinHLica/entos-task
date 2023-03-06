@@ -1,0 +1,84 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: white;
+
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-top: auto;
+
+  border-top: 1px solid var(--gray-300);
+
+  transition: background-color 0.3s ease, border 0.3s ease;
+
+  p {
+    display: flex;
+    align-items: center;
+    row-gap: 10px;
+    column-gap: 10px;
+
+    .heart {
+      position: relative;
+
+      width: 0.7em;
+      height: 0.7em;
+
+      background-color: var(--red-500);
+
+      margin-bottom: -4px;
+
+      transform: rotate(45deg);
+      animation: animateHeart 1.2s infinite;
+
+      &::before,
+      &::after {
+        content: "";
+
+        position: absolute;
+
+        width: 0.7em;
+        height: 0.7em;
+
+        background-color: var(--red-500);
+
+        border-radius: 50%;
+      }
+
+      &::before {
+        left: -0.5em;
+      }
+
+      &::after {
+        top: -0.5em;
+      }
+    }
+
+    @keyframes animateHeart {
+      0% {
+        transform: rotate(45deg) scale(0.8);
+      }
+      5% {
+        transform: rotate(45deg) scale(0.9);
+      }
+      10% {
+        transform: rotate(45deg) scale(0.8);
+      }
+      15% {
+        transform: rotate(45deg) scale(1);
+      }
+      50% {
+        transform: rotate(45deg) scale(0.8);
+      }
+      100% {
+        transform: rotate(45deg) scale(0.8);
+      }
+    }
+
+    a {
+      color: var(--blue-800);
+      font-weight: 500;
+    }
+  }
+}

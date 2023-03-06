@@ -1,0 +1,21 @@
+@import "../utils/typography";
+@import "../utils/screen";
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: white;
+
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  border-bottom: 1px solid var(--gray-300);
+
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
