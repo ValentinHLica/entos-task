@@ -18,6 +18,7 @@ const Form = () => {
 
       <div className={styles.form__selection}>
         <Select
+          placeholder="Select Company..."
           className={styles.form__select}
           isMulti
           closeMenuOnSelect={false}
@@ -36,6 +37,7 @@ const Form = () => {
         />
 
         <Select
+          placeholder="Select Area..."
           className={styles.form__select}
           isMulti
           closeMenuOnSelect={false}
