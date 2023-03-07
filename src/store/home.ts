@@ -11,6 +11,9 @@ const initialState: InitialHomeState = {
   companies: [],
   shipment: [],
   areas: [],
+
+  selectedCompanies: [],
+  selectedAreas: [],
 };
 
 export const auth = createSlice({
@@ -29,10 +32,22 @@ export const auth = createSlice({
     setAreas: (state, action: PayloadAction<Area[]>) => {
       state.areas = action.payload;
     },
+    setSelectedCompanies: (state, action: PayloadAction<number[]>) => {
+      state.selectedCompanies = action.payload;
+    },
+    setSelectedAreas: (state, action: PayloadAction<number[]>) => {
+      state.selectedAreas = action.payload;
+    },
   },
 });
 
-export const { setAreas, setCompanies, setCompanyArea, setShipment } =
-  auth.actions;
+export const {
+  setSelectedCompanies,
+  setSelectedAreas,
+  setCompanyArea,
+  setCompanies,
+  setShipment,
+  setAreas,
+} = auth.actions;
 
 export default auth.reducer;

@@ -8,4 +8,7 @@ export interface InitialHomeState {
   companies: Company[];
   shipment: Shipment[];
   areas: Area[];
+
+  selectedCompanies: number[];
+  selectedAreas: number[];
 }

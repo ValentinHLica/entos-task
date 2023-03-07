@@ -15,6 +15,8 @@ import {
 } from "@store/home";
 
 import Layout from "@components/Layout";
+import Table from "@components/Table";
+import Form from "@components/Form";
 
 const HomePage = () => {
   const dispatch = useDispatch();
@@ -45,7 +47,9 @@ const HomePage = () => {
   return (
     <Layout>
       <div className="container">
-        <h1>HomePage</h1>
+        <Form />
+
+        <Table />
       </div>
     </Layout>
   );

@@ -29,6 +29,12 @@ body {
   background-color: white;
 }
 
+div[id="root"] {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 a {
   color: currentColor;
   text-decoration: none;

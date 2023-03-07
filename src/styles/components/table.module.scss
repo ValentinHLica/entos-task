@@ -1,0 +1,44 @@
+@import "../base/variables";
+@import "../utils/typography";
+
+.table {
+  width: 100%;
+  white-space: nowrap;
+
+  margin-top: 16px;
+
+  thead {
+    background-color: var(--gray-50);
+
+    th {
+      padding: 13px 24px;
+      border-bottom: 1px solid var(--gray-200);
+      border-top: 1px solid var(--gray-200);
+      color: var(--gray-500);
+
+      @include typography(12px, 500, 18px, 0, left);
+    }
+  }
+
+  tbody {
+    background-color: white;
+
+    tr {
+      border: 1px solid var(--gray-200);
+
+      &:last-child {
+        td {
+          border-bottom: none;
+        }
+      }
+
+      td {
+        padding: 16px 24px;
+        border-bottom: 1px solid var(--gray-200);
+        color: var(--gray-800);
+
+        @include typography(14px, 400, 20px, 0, left);
+      }
+    }
+  }
+}

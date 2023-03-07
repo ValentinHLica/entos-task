@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  margin-top: 32px;
+
+  .form__selection {
+    display: flex;
+    row-gap: 16px;
+    column-gap: 16px;
+
+    .form__select {
+      flex: 1;
+
+      height: fit-content;
+
+      max-width: 300px;
+    }
+  }
+}
