@@ -40,5 +40,11 @@
         @include typography(14px, 400, 20px, 0, left);
       }
     }
+
+    .table__empty {
+      margin-top: 32px;
+
+      text-align: center;
+    }
   }
 }

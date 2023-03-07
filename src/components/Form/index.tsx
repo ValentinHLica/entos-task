@@ -26,8 +26,6 @@ const Form = () => {
             value: item.companyId,
           }))}
           onChange={(selectedOptions) => {
-            if (Array.isArray(selectedOptions)) return;
-
             const values = selectedOptions as MultiValue<{
               label: string;
               value: number;
@@ -46,8 +44,6 @@ const Form = () => {
             value: item.areaId,
           }))}
           onChange={(selectedOptions) => {
-            if (Array.isArray(selectedOptions)) return;
-
             const values = selectedOptions as MultiValue<{
               label: string;
               value: number;
